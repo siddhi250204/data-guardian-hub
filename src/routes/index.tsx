@@ -235,6 +235,8 @@ function Index() {
               <p>Without proper checks, different evaluators may apply different standards, leading to inconsistent outcomes. Bias may also arise when automated tools are used without review.</p>
             </Section>
 
+            <SectionImage src={securityImg} alt="Digital shield with lock icon representing cybersecurity" />
+
             <Section id="ai" eyebrow="09 · AI" title="The role of artificial intelligence">
               <p>AI is increasingly used in education to support assessment <em className="text-primary not-italic">(Williamson & Eynon, 2020)</em> — originality checks, moderation alerts, grammar suggestions and feedback summaries. These tools may save time and improve efficiency when used responsibly.</p>
               <p>However, AI systems should be treated as support mechanisms rather than final decision-makers. Important judgments must remain under the supervision of qualified educators.</p>
