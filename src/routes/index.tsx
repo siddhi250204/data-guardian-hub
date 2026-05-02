@@ -86,6 +86,16 @@ function Section({ id, eyebrow, title, children }: { id: string; eyebrow?: strin
   );
 }
 
+function SectionImage({ src, alt }: { src: string; alt: string }) {
+  return (
+    <Reveal>
+      <div className="my-10 rounded-2xl overflow-hidden border border-border/50 glow">
+        <img src={src} alt={alt} width={1280} height={720} loading="lazy" className="w-full h-auto object-cover" />
+      </div>
+    </Reveal>
+  );
+}
+
 function Index() {
   const [openTakeaway, setOpenTakeaway] = useState<number | null>(0);
 
