@@ -1,6 +1,12 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import heroImg from "@/assets/hero.jpg";
+import evolutionImg from "@/assets/evolution.jpg";
+import lifecycleImg from "@/assets/lifecycle.jpg";
+import securityImg from "@/assets/security.jpg";
+import aiImg from "@/assets/ai-education.jpg";
+import privacyImg from "@/assets/privacy.jpg";
+import futureImg from "@/assets/future.jpg";
 import { ScrollProgress } from "@/components/ScrollProgress";
 import { ChapterNav } from "@/components/ChapterNav";
 import { Reveal } from "@/components/Reveal";
@@ -80,6 +86,16 @@ function Section({ id, eyebrow, title, children }: { id: string; eyebrow?: strin
   );
 }
 
+function SectionImage({ src, alt }: { src: string; alt: string }) {
+  return (
+    <Reveal>
+      <div className="my-10 rounded-2xl overflow-hidden border border-border/50 glow">
+        <img src={src} alt={alt} width={1280} height={720} loading="lazy" className="w-full h-auto object-cover" />
+      </div>
+    </Reveal>
+  );
+}
+
 function Index() {
   const [openTakeaway, setOpenTakeaway] = useState<number | null>(0);
 
@@ -153,6 +169,8 @@ function Index() {
               <p>As colleges adopt project-based and continuous evaluation methods, the quantity and variety of educational data grows significantly. Reports, presentations, coding submissions, peer reviews, attendance records and faculty feedback all become part of the assessment process.</p>
             </Section>
 
+            <SectionImage src={evolutionImg} alt="Students working on digital assessments in a modern classroom" />
+
             <Section id="governance" eyebrow="03 · Definition" title="What is data governance?">
               <p>Data governance is the structured framework used to manage information throughout its lifecycle — policies, standards, responsibilities and controls that guide how data is collected, stored, accessed, updated, shared and deleted.</p>
               <p>In educational institutions, governance ensures that student information is handled carefully and only for legitimate academic purposes. It also helps assign responsibility so that errors, misuse or unauthorized access can be addressed quickly.</p>
@@ -162,6 +180,8 @@ function Index() {
               <p>Student records affect grades, progression decisions, scholarships, placements, internships and overall institutional trust. If these records are inaccurate or mishandled, students may face unfair consequences.</p>
               <p>Strong governance also improves confidence among students, parents, faculty and employers. When assessment systems are transparent and well managed, stakeholders trust the results.</p>
             </Section>
+
+            <SectionImage src={lifecycleImg} alt="Abstract visualization of interconnected data lifecycle nodes" />
 
             {/* Interactive Lifecycle */}
             <Section id="lifecycle" eyebrow="05 · The Journey" title="The data lifecycle">
@@ -183,6 +203,8 @@ function Index() {
                 ))}
               </div>
             </Section>
+
+            <SectionImage src={privacyImg} alt="Magnifying glass examining documents representing privacy and transparency" />
 
             <Section id="privacy" eyebrow="06 · Privacy" title="Concerns students raise">
               <p>Students may feel uncomfortable when excessive personal information is collected or when records are shared without proper justification. Privacy concerns increase when institutions monitor online activity too closely or fail to explain how information will be used.</p>
@@ -213,10 +235,14 @@ function Index() {
               <p>Without proper checks, different evaluators may apply different standards, leading to inconsistent outcomes. Bias may also arise when automated tools are used without review.</p>
             </Section>
 
+            <SectionImage src={securityImg} alt="Digital shield with lock icon representing cybersecurity" />
+
             <Section id="ai" eyebrow="09 · AI" title="The role of artificial intelligence">
               <p>AI is increasingly used in education to support assessment <em className="text-primary not-italic">(Williamson & Eynon, 2020)</em> — originality checks, moderation alerts, grammar suggestions and feedback summaries. These tools may save time and improve efficiency when used responsibly.</p>
               <p>However, AI systems should be treated as support mechanisms rather than final decision-makers. Important judgments must remain under the supervision of qualified educators.</p>
             </Section>
+
+            <SectionImage src={aiImg} alt="Hand reaching toward holographic brain representing AI in education" />
 
             <Section id="oversight" eyebrow="10 · Oversight" title="Why humans must stay in the loop">
               <p>Automated systems process data quickly but they are not free from error. Software may misinterpret context, overlook special circumstances or apply rules too rigidly. Human review provides judgment, contextual understanding and an additional layer of accountability that machines cannot replicate.</p>
@@ -307,6 +333,8 @@ function Index() {
               <p>Educational assessment is expected to become more data-driven <em className="text-primary not-italic">(OECD, 2024)</em>. Learning analytics can identify student progress patterns and support needs. Adaptive systems may adjust difficulty in real time.</p>
               <p>While these innovations improve efficiency, they also increase the volume of sensitive information processed. Stronger governance frameworks will be necessary to manage privacy, fairness and accountability.</p>
             </Section>
+
+            <SectionImage src={futureImg} alt="Futuristic holographic dashboard showing student analytics" />
 
             {/* Interactive takeaways */}
             <Section id="takeaways" eyebrow="21 · Recap" title="Key takeaways">
