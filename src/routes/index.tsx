@@ -1,6 +1,12 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import heroImg from "@/assets/hero.jpg";
+import evolutionImg from "@/assets/evolution.jpg";
+import lifecycleImg from "@/assets/lifecycle.jpg";
+import securityImg from "@/assets/security.jpg";
+import aiImg from "@/assets/ai-education.jpg";
+import privacyImg from "@/assets/privacy.jpg";
+import futureImg from "@/assets/future.jpg";
 import { ScrollProgress } from "@/components/ScrollProgress";
 import { ChapterNav } from "@/components/ChapterNav";
 import { Reveal } from "@/components/Reveal";
