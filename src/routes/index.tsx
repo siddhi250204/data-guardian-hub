@@ -169,6 +169,8 @@ function Index() {
               <p>As colleges adopt project-based and continuous evaluation methods, the quantity and variety of educational data grows significantly. Reports, presentations, coding submissions, peer reviews, attendance records and faculty feedback all become part of the assessment process.</p>
             </Section>
 
+            <SectionImage src={evolutionImg} alt="Students working on digital assessments in a modern classroom" />
+
             <Section id="governance" eyebrow="03 · Definition" title="What is data governance?">
               <p>Data governance is the structured framework used to manage information throughout its lifecycle — policies, standards, responsibilities and controls that guide how data is collected, stored, accessed, updated, shared and deleted.</p>
               <p>In educational institutions, governance ensures that student information is handled carefully and only for legitimate academic purposes. It also helps assign responsibility so that errors, misuse or unauthorized access can be addressed quickly.</p>
