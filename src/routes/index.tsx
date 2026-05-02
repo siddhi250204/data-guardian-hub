@@ -181,6 +181,8 @@ function Index() {
               <p>Strong governance also improves confidence among students, parents, faculty and employers. When assessment systems are transparent and well managed, stakeholders trust the results.</p>
             </Section>
 
+            <SectionImage src={lifecycleImg} alt="Abstract visualization of interconnected data lifecycle nodes" />
+
             {/* Interactive Lifecycle */}
             <Section id="lifecycle" eyebrow="05 · The Journey" title="The data lifecycle">
               <p>Assessment data passes through several stages. Hover or tap each stage to see what happens — and where things can go wrong if governance is missing.</p>
