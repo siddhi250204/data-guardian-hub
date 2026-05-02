@@ -334,6 +334,8 @@ function Index() {
               <p>While these innovations improve efficiency, they also increase the volume of sensitive information processed. Stronger governance frameworks will be necessary to manage privacy, fairness and accountability.</p>
             </Section>
 
+            <SectionImage src={futureImg} alt="Futuristic holographic dashboard showing student analytics" />
+
             {/* Interactive takeaways */}
             <Section id="takeaways" eyebrow="21 · Recap" title="Key takeaways">
               <p>Click any card to expand. The shortlist for any institution serious about modern assessment.</p>
