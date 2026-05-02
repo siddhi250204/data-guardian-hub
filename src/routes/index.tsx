@@ -204,6 +204,8 @@ function Index() {
               </div>
             </Section>
 
+            <SectionImage src={privacyImg} alt="Magnifying glass examining documents representing privacy and transparency" />
+
             <Section id="privacy" eyebrow="06 · Privacy" title="Concerns students raise">
               <p>Students may feel uncomfortable when excessive personal information is collected or when records are shared without proper justification. Privacy concerns increase when institutions monitor online activity too closely or fail to explain how information will be used.</p>
               <p>Colleges should collect only the data genuinely required for academic purposes. Clear notices should inform students about what is gathered, why it's needed, and how long it will be retained <em className="text-primary not-italic">(Ifenthaler & Schumacher, 2016)</em>.</p>
