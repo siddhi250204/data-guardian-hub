@@ -242,6 +242,8 @@ function Index() {
               <p>However, AI systems should be treated as support mechanisms rather than final decision-makers. Important judgments must remain under the supervision of qualified educators.</p>
             </Section>
 
+            <SectionImage src={aiImg} alt="Hand reaching toward holographic brain representing AI in education" />
+
             <Section id="oversight" eyebrow="10 · Oversight" title="Why humans must stay in the loop">
               <p>Automated systems process data quickly but they are not free from error. Software may misinterpret context, overlook special circumstances or apply rules too rigidly. Human review provides judgment, contextual understanding and an additional layer of accountability that machines cannot replicate.</p>
             </Section>
